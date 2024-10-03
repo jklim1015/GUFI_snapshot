@@ -1,8 +1,7 @@
-# GUFI_snapshot
-# Snapshot.py - GUFI Script Contribution
+# snapshot.py - GUFI Script Contribution
 
 ## Overview
-`Snapshot.py` pulls data using `gufi_query` and aggregates key statistics, such as mode, buckets, and median, before joining all the data into a comprehensive snapshot view. The script outputs an `sqlite3` database file, containing:
+`snapshot.py` pulls data using `gufi_query` and aggregates key statistics, such as mode, buckets, and median, before joining all the data into a comprehensive snapshot view. The script outputs an `sqlite3` database file, containing:
 - Data-specific tables.
 - A metadata table (`meta_snap`).
 - The complete snapshot view.
@@ -24,4 +23,4 @@ To create a snapshot of a given GUFI tree, run the script with the following arg
 
 #### Example Command
 ```bash
-python3 Snapshot.py --index /tmp/index/build snapshot.db --user_time 1680123456
+python3 snapshot.py --index /tmp/index/build snapshot.db --user_time 1680123456
